@@ -1,9 +1,11 @@
 # GIMP Puppet Module for Boxen
 
+[![Build Status](https://travis-ci.org/boxen/puppet-gimp.png)](https://travis-ci.org/boxen/puppet-gimp)
+
 ## Usage
 
 ```puppet
-include gimp 
+include gimp
 ```
 
 ## Required Puppet Modules
