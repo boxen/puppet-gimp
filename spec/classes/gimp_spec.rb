@@ -1,10 +1,13 @@
 require 'spec_helper'
 
 describe 'gimp' do
-  it do
-    should contain_package('GNU Image Manipulation Program').with({
-      :provider => 'appdmg',
-      :source   => 'http://download.gimp.org/pub/gimp/v2.8/osx/gimp-2.8.4-nopython-dmg-1.dmg',
-    })
-  end
+
+  major_version = '2.8'
+  version = '2.8.16-x86_64-1'
+
+  it { should contain_class('gimp') }
+  it { should contain_package("Gimp-#{version}").with_provider('appdmg') }
+  it { should contain_package("Gimp-#{version}")
+    .with_source("http://download.gimp.org/mirror/pub/gimp/v#{major_version}/osx/gimp-#{version}.dmg") }
+
 end
