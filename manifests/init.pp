@@ -3,9 +3,15 @@
 # Examples
 #
 #   include gimp
-class gimp {
-  package { 'GNU Image Manipulation Program':
+#   or
+#   class {'gimp':
+#     major_version => '2.8',
+#     version       => '2.8.16-x86_64',
+#   }
+#
+class gimp($major_version='2.8', $version='2.8.16-x86_64') {
+  package { "Gimp-${version}":
     provider => 'appdmg',
-    source   => 'http://download.gimp.org/pub/gimp/v2.8/osx/gimp-2.8.4-nopython-dmg-1.dmg',
+    source   => "http://download.gimp.org/pub/gimp/v${major_version}/osx/gimp-${version}.dmg",
   }
 }
