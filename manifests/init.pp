@@ -12,6 +12,6 @@
 class gimp($major_version='2.8', $version='2.8.16-x86_64-1') {
   package { "Gimp-${version}":
     provider => 'appdmg',
-    source   => "http://download.gimp.org/pub/gimp/v${major_version}/osx/gimp-${version}.dmg",
+    source   => "http://download.gimp.org/mirror/pub/gimp/v${major_version}/osx/gimp-${version}.dmg",
   }
 }
