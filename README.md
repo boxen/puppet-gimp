@@ -8,6 +8,15 @@
 include gimp
 ```
 
+or with version specification
+
+```puppet
+class { 'gimp':
+  major_version => '2.8',
+  version       => '2.8.16-x86_64',
+}
+```
+
 ## Required Puppet Modules
 
 None.
