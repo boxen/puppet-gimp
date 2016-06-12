@@ -1,6 +1,6 @@
 # GIMP Puppet Module for Boxen
 
-[![Build Status](https://travis-ci.org/boxen/puppet-gimp.png)](https://travis-ci.org/boxen/puppet-gimp)
+[![Build Status](https://travis-ci.org/boxen/puppet-gimp.svg)](https://travis-ci.org/boxen/puppet-gimp)
 
 ## Usage
 
